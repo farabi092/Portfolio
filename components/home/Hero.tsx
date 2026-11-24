@@ -1,73 +1,63 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section id="home" className="intro-hero">
-      <div className="container intro-hero-layout">
+    <section id="home" className="hero">
+      <div className="site-width hero-layout">
         <motion.div
-          className="intro-hero-content"
+          className="hero-content"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <span className="section-number">
-            COMPUTER SCIENCE GRADUATE · BRAC UNIVERSITY
-          </span>
-
           <h1>
-            Hi, I'm <span>Wasi Farabi.</span>
+            Hi, I&rsquo;m <span>Wasi Farabi.</span>
           </h1>
 
-          <p className="intro-hero-description">
-            I explore the intersection of software development,
-            artificial intelligence, data and visual creativity.
-            I enjoy building useful things and turning ideas into
-            thoughtful digital experiences.
+          <p className="hero-description">
+           A Computer Science & Engineering graduate from BRAC University driven by a 
+           curiosity for how logic meets aesthetics. Working across AI, full-stack development, 
+           data analytics, and graphic design, I build intelligent systems and craft clean, 
+           human-centered interfaces from the ground up.
           </p>
 
-          <div className="intro-hero-details">
+          <div className="hero-tags">
+            <span>AI &amp; MACHINE LEARNING</span>
             <span>SOFTWARE DEVELOPMENT</span>
-            <span>AI & MACHINE LEARNING</span>
             <span>DATA ANALYTICS</span>
-            <span>VISUAL DESIGN</span>
+            <span>GRAPHICS DESIGN</span>
           </div>
 
-          <div className="intro-hero-actions">
-            <a href="#work" className="hero-button">
-              Explore My Work <span>↗</span>
+          <div className="hero-actions">
+            <a href="#projects" className="hero-button">
+              Explore My Work
+              <ArrowUpRight size={16} aria-hidden="true" />
             </a>
 
-            <a href="#expertise" className="hero-secondary-link">
-              What I Do
+            <a href="#tech-stack" className="hero-link">
+              Tech Stack
             </a>
           </div>
         </motion.div>
 
         <motion.div
-          className="hero-artwork intro-hero-artwork"
+          className="hero-artwork"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.2 }}
         >
-          <div className="art-grid" />
-          <div className="art-circle art-circle-one" />
-          <div className="art-circle art-circle-two" />
-          <div className="art-square" />
-          <div className="art-orbit" />
-
-          <div className="art-center">
-            <span>WF</span>
-          </div>
-
-          <span className="art-label art-label-left">
-            SOFTWARE
-          </span>
-          <span className="art-label art-label-right">
-            CREATIVITY
-          </span>
-          <span className="art-index">01 / 09</span>
+        <Image
+          src="/image/wasifarabi.png"
+          alt="Wasi Farabi"
+          width={1000}
+          height={1000}
+          priority
+          className="hero-profile-image"
+        />
         </motion.div>
       </div>
     </section>

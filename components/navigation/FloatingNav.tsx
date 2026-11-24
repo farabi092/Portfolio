@@ -1,17 +1,8 @@
-
 "use client";
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-
-const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Work", href: "#work" },
-  { label: "Experience", href: "#experience" },
-  { label: "Research", href: "#research" },
-  { label: "Art", href: "#art" },
-];
+import { ArrowUpRight, Menu, X } from "lucide-react";
+import { navLinks, navCta } from "@/data/navigation";
 
 export default function FloatingNav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,14 +17,15 @@ export default function FloatingNav() {
         WASI FARABI<span>.</span>
       </a>
 
-      <nav className="desktop-nav">
+      <nav className="desktop-nav" aria-label="Primary">
         {navLinks.map((link) => (
           <a key={link.href} href={link.href}>
             {link.label}
           </a>
         ))}
-        <a href="#contact" className="nav-contact">
-          Let's Talk <span>↗</span>
+        <a href={navCta.href} className="nav-contact">
+          {navCta.label}
+          <ArrowUpRight size={14} aria-hidden="true" />
         </a>
       </nav>
 
@@ -47,7 +39,7 @@ export default function FloatingNav() {
       </button>
 
       {menuOpen && (
-        <nav className="mobile-nav">
+        <nav className="mobile-nav" aria-label="Mobile">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -57,8 +49,13 @@ export default function FloatingNav() {
               {link.label}
             </a>
           ))}
-          <a href="#contact" onClick={() => setMenuOpen(false)}>
-            Let's Talk ↗
+          <a
+            href={navCta.href}
+            className="nav-contact"
+            onClick={() => setMenuOpen(false)}
+          >
+            {navCta.label}
+            <ArrowUpRight size={14} aria-hidden="true" />
           </a>
         </nav>
       )}
