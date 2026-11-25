@@ -8,7 +8,7 @@ import type { SocialIconName } from "./socialIcons";
 //
 // Files inside "public" are served from the website root, so the path
 // below starts with "/" and does NOT include the word "public".
-export const resumeHref = "/resume/Wasi_Farabi_Resume.pdf";
+export const resumeHref = "/resume/Wasi_Farabi_Resume_n-a.pdf";
 
 // SOCIAL AND CONTACT LINKS
 
