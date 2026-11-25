@@ -43,14 +43,14 @@ export const experienceGroups: ExperienceGroup[] = [
         title: "Viqarunnisa Noon School & College",
         subtitle: "Higher Secondary Certificate (Science)",
         location: "Dhaka, Bangladesh",
-        meta: "GPA: 5.00/5.00",
+        
       },
       {
         period: "2019",
         title: "Viqarunnisa Noon School & College",
         subtitle: "Secondary School Certificate (Science)",
         location: "Dhaka, Bangladesh",
-        meta: "GPA: 5.00/5.00",
+        
       },
     ],
   },

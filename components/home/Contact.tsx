@@ -14,15 +14,15 @@ export default function Contact() {
       <Reveal>
         <SectionHeading
           align="center"
-          label="07 / CONTACT"
+          label="CONTACT"
           title={
             <>
-              Contact <span className="text-(--accent)">me.</span>
+              Let's<span className="text-(--accent)"> Connect</span>
             </>
           }
+          description="Available for work, collaborations, and freelance opportunities."
         />
       </Reveal>
-
       {/* Round icon buttons. The addresses are set in data/links.ts */}
       <Reveal>
         <ul className="contact-icons">

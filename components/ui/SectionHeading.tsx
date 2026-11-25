@@ -17,7 +17,7 @@ export default function SectionHeading({
 
   return (
     <div className={centered ? "mb-14 text-center" : "mb-14"}>
-      <span className="font-mono text-[11px] tracking-[1.5px] opacity-70">
+      <span className="font-mono text-[15px] tracking-[1.5px] opacity-70">
         {label}
       </span>
 

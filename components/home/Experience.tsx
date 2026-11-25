@@ -11,8 +11,8 @@ export default function Experience() {
       {/* The three subsection headings lead; "Experience" is kept as a small
           label for sighted visitors and as a real heading for screen readers. */}
       <h2 className="sr-only">Experience</h2>
-      <p className="mb-10 text-center font-mono text-[11px] tracking-[1.5px] opacity-70">
-        04 / EXPERIENCE
+      <p className="mb-10 text-center font-mono text-[15px] tracking-[1.5px] opacity-70">
+        EXPERIENCE
       </p>
 
       <div className="mx-auto max-w-[900px]">
@@ -48,11 +48,11 @@ export default function Experience() {
                     href={resumeHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Download Resume (PDF, opens in a new tab)"
+                    aria-label="View Resume (PDF, opens in a new tab)"
                     className="outline-button"
                   >
                     <FileText size={16} aria-hidden="true" />
-                    Download Resume
+                    View Resume
                   </a>
                 </div>
               )}

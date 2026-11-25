@@ -10,10 +10,10 @@ export default function TechStack() {
       <Reveal>
         <SectionHeading
           align="center"
-          label="02 / TECH STACK"
+          label="TECH STACK"
           title={
             <>
-              Technologies <span className="text-(--accent)">I work with.</span>
+              Technologies <span className="text-(--accent)">behind the build</span>
             </>
           }
         />

@@ -11,9 +11,8 @@ export default function Art() {
     <Section id="art" tone="navy">
       <Reveal>
         <SectionHeading
-          label="06 / ART"
-          title="Art"
-          description="Selected artwork. More in the gallery."
+          label="ART"
+          title="Frames & Illustrations"
         />
       </Reveal>
 

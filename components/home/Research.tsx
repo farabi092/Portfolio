@@ -7,7 +7,7 @@ export default function Research() {
   return (
     <Section id="research" tone="cream">
       <Reveal>
-        <SectionHeading label="05 / RESEARCH" title="Research" />
+        <SectionHeading label="RESEARCH" title="Papers & Explorations" />
       </Reveal>
 
       <div className="space-y-6">

@@ -38,9 +38,7 @@ export default function Hero() {
               <ArrowUpRight size={16} aria-hidden="true" />
             </a>
 
-            <a href="#tech-stack" className="hero-link">
-              Tech Stack
-            </a>
+
           </div>
         </motion.div>
 

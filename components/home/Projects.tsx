@@ -10,10 +10,10 @@ export default function Projects() {
     <Section id="projects" tone="cream">
       <Reveal>
         <SectionHeading
-          label="03 / PROJECTS"
+          label="Projects"
           title={
             <>
-              Projects <span className="text-(--accent)"></span>
+              Code Turned Into Reality <span className="text-(--accent)"></span>
             </>
           }
           description=""

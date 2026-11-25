@@ -11,4 +11,4 @@ export const navLinks = [
   { label: "Art", href: "#art" },
 ];
 
-export const navCta = { label: "Contact Me", href: "#contact" };
+export const navCta = { label: "Contact", href: "#contact" };
